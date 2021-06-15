@@ -18,14 +18,19 @@ public class BankAccount {
         this.phone = phone;
     }
 
-    public void deposit(int amount){
+
+
+    public int deposit(int amount){
         this.balanceAccount = this.balanceAccount + amount;
+        return balanceAccount;
     }
 
-    public void withdraw(int amount){
-        if (amount<=balanceAccount){
-            balanceAccount=balanceAccount-amount;
+    public int withdraw(int amount) {
+        if (amount <= balanceAccount) {
+            balanceAccount = balanceAccount - amount;
         }
+            return balanceAccount;
+
     }
 
     public int getAccountNumber() {
