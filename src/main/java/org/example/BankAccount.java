@@ -2,7 +2,7 @@ package org.example;
 
 public class BankAccount {
 
-    private static int counter = 0;
+    static int counter = 0;
 
     private int accountNumber;
     private int balanceAccount;
